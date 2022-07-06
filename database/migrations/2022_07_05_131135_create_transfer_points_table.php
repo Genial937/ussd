@@ -17,6 +17,7 @@ class CreateTransferPointsTable extends Migration
             $table->id();
             $table->string('from_phone_number')->nullable();
             $table->string('to_phone_number')->nullable();
+            $table->string('points')->nullable();
             $table->string('reference_no')->nullable();
             $table->timestamps();
         });

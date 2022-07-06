@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\USSDController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/ussd/{phone}/{text}', [USSDController::class, 'ussd']);
+Artisan::call('migrate');
+Route::post('/ussd', [USSDController::class, 'ussd']);
+Route::get('/', function () {
+    return view('welcome');
+});

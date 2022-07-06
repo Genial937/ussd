@@ -60,7 +60,7 @@ class USSDController extends Controller
 
     private function main_menu()
     {
-        $text = "Welcome to Teddys App <br> Please reply with <br> 1. Register <br> 2. Transfer points <br> 3. Purchase item with points <br> 4. Check points balance <br> 5. Change password";
+        $text = "Welcome to Loyalty <br> Please reply with <br> 1. Register <br> 2. Transfer points <br> 3. Purchase item with points <br> 4. Check points balance <br> 5. Change password";
 
         $this->ussd_proceed($text);
     }

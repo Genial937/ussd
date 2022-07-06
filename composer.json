@@ -12,7 +12,7 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.12",
+        "laravel/framework": "^8.01",
         "laravel/tinker": "^2.5"
     },
     "require-dev": {
@@ -25,7 +25,8 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "platform-check": false
     },
     "extra": {
         "laravel": {
